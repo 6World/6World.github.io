@@ -13,9 +13,9 @@
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a { color: #444; text-decoration: none; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; transition: color 0.2s; }
     .nav-links a:hover { color: #2563a8; }
-    .hero { position: relative; width: 100%; height: 1200px; background: #e8eef4; display: flex; align-items: flex-end; overflow: hidden; }
-    .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-    .hero-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: none;
+    .hero { position: relative; width: 100%; height: 1200px; overflow: hidden; }
+    .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; }
+    .hero-overlay { position: absolute; top: 0; left: 0; right: 0; padding: 2rem 2.5rem; }
     .hero-label { font-size: 0.72rem; letter-spacing: 3px; color: #2563a8; text-transform: uppercase; margin-bottom: 0.5rem; }
     .hero-title { font-size: 2.8rem; font-weight: 300; line-height: 1.1; color: #1a1a1a; margin-bottom: 1rem; letter-spacing: 1px; }
     .hero-cta { display: inline-block; background: #2563a8; color: #fff; padding: 0.6rem 1.6rem; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; font-weight: 600; border-radius: 2px; }
@@ -24,7 +24,7 @@
     .comics-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem; }
     .comic-card { background: #fff; border-radius: 6px; overflow: hidden; cursor: pointer; border: 1px solid #e8e8e8; transition: transform 0.2s, box-shadow 0.2s; }
     .comic-card:hover { transform: translateY(-4px); box-shadow: 0 6px 16px rgba(37,99,168,0.1); }
-    .comic-cover { width: 100%; aspect-ratio: 2/3; background: #e8eef4; overflow: hidden; border-bottom: 1px solid #e8e8e8; }
+    .comic-cover { width: 100%; aspect-ratio: 2/3; overflow: hidden; border-bottom: 1px solid #e8e8e8; background: #e8eef4; display: flex; align-items: center; justify-content: center; }
     .comic-cover img { width: 100%; height: 100%; object-fit: cover; }
     .comic-info { padding: 0.75rem; }
     .comic-title { font-size: 0.85rem; font-weight: 600; color: #1a1a1a; margin-bottom: 0.2rem; }
@@ -74,7 +74,7 @@
       </div>
       <div class="comic-info">
         <div class="comic-title">Future Title</div>
-        <div class="comic-sub">6 Worlds Comics</div>
+        <div class="comic-sub">6World Comics</div>
         <div class="comic-badge" style="background:#f4f4f4; color:#aaa;">Coming Soon</div>
       </div>
     </div>
@@ -84,7 +84,7 @@
       </div>
       <div class="comic-info">
         <div class="comic-title">Future Title</div>
-        <div class="comic-sub">6 Worlds Comics</div>
+        <div class="comic-sub">6World Comics</div>
         <div class="comic-badge" style="background:#f4f4f4; color:#aaa;">Coming Soon</div>
       </div>
     </div>
@@ -94,7 +94,7 @@
       </div>
       <div class="comic-info">
         <div class="comic-title">Future Title</div>
-        <div class="comic-sub">6 Worlds Comics</div>
+        <div class="comic-sub">6World Comics</div>
         <div class="comic-badge" style="background:#f4f4f4; color:#aaa;">Coming Soon</div>
       </div>
     </div>
@@ -103,7 +103,7 @@
 
 <div class="about" id="about">
   <h2>About 6World Comics</h2>
-  <p>6 Worlds Comics is an independent publishing imprint founded by Jesse Six. We create original graphic novels and comics with bold storytelling and distinctive art. All titles are self-published and creator-owned.</p>
+  <p>6World Comics is an independent publishing imprint founded by Jesse Six. We create original graphic novels and comics with bold storytelling and distinctive art. All titles are self-published and creator-owned.</p>
 </div>
 
 <footer>
