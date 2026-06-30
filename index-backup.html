@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="images/6world_logo_favicon.jpg">
+  <title>6World Comics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #ffffff; color: #1a1a1a; font-family: 'Nunito Sans', 'Gill Sans', 'Trebuchet MS', Arial, sans-serif; }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; background: #ffffff; border-bottom: 1px solid #e8e8e8; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-size: 1.2rem; font-weight: 600; letter-spacing: 3px; color: #1a1a1a; text-transform: uppercase; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: #444; text-decoration: none; font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: #2563a8; }
+    .hero { position: relative; width: 100%; height: 800px; overflow: hidden; }
+    .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; }
+    .hero-overlay { position: absolute; top: 0; left: 0; right: 0; padding: 2rem 2.5rem; }
+    .hero-label { font-size: 0.72rem; letter-spacing: 3px; color: #2563a8; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .hero-title { font-size: 2.8rem; font-weight: 300; line-height: 1.1; color: #1a1a1a; margin-bottom: 1rem; letter-spacing: 1px; }
+    .hero-cta { display: inline-block; background: #2563a8; color: #fff; padding: 0.6rem 1.6rem; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; font-weight: 600; border-radius: 2px; }
+    .section { padding: 3rem 2rem; background: #ffffff; }
+    .section-title { font-size: 0.8rem; letter-spacing: 4px; text-transform: uppercase; color: #2563a8; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid #e8e8e8; }
+    .comics-grid { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
+    .comic-card { background: #fff; border-radius: 6px; overflow: hidden; cursor: pointer; border: 1px solid #e8e8e8; transition: transform 0.2s, box-shadow 0.2s; width: 200px; }
+    .comic-card:hover { transform: translateY(-4px); box-shadow: 0 6px 16px rgba(37,99,168,0.1); }
+    .comic-cover { width: 100%; aspect-ratio: 2/3; overflow: hidden; border-bottom: 1px solid #e8e8e8; background: #e8eef4; display: flex; align-items: center; justify-content: center; }
+    .comic-cover img { width: 100%; height: 100%; object-fit: cover; }
+    .comic-info { padding: 0.75rem; }
+    .comic-title { font-size: 0.85rem; font-weight: 600; color: #1a1a1a; margin-bottom: 0.2rem; }
+    .comic-sub { font-size: 0.75rem; color: #999; }
+    .comic-badge { display: inline-block; background: #e8f0f8; color: #2563a8; font-size: 0.65rem; letter-spacing: 1px; padding: 2px 7px; border-radius: 2px; margin-top: 0.4rem; text-transform: uppercase; font-weight: 600; }
+    .about { background: #f8f9fa; border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; padding: 3rem 2rem; }
+    .about h2 { font-size: 1.5rem; font-weight: 300; margin-bottom: 1rem; color: #1a1a1a; letter-spacing: 1px; }
+    .about p { color: #556677; line-height: 1.8; font-size: 0.95rem; max-width: 600px; }
+    footer { padding: 1.5rem 2rem; text-align: center; font-size: 0.8rem; color: #aaa; border-top: 1px solid #e8e8e8; background: #fff; letter-spacing: 1px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo"><img src="images/6worldcomics_logo_small.jpg" alt="6World Comics" style="height: 40px; width: auto; position: relative; top: 12px; margin-right: 10px;">6World Comics</div>
+  <ul class="nav-links">
+    <li><a href="#comics">Comics</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <img class="hero-img" src="images/hero-image.jpg" alt="Anthological Adventures cover">
+  <div class="hero-overlay">
+    <div class="hero-label">6World Comics presents</div>
+    <div class="hero-title">Anthological Adventures</div>
+<a href="#comics" class="hero-cta">Coming Soon</a>  </div>
+</div>
+
+<div class="section" id="comics">
+  <div class="section-title">Comics</div>
+  <div class="comics-grid">
+
+    <div class="comic-card" onclick="location.href='samp-001.html'">
+      <div class="comic-cover">
+        <img src="images/samp-001/samp-001-000.jpg" alt="Super Action Mecha Pets #1">
+      </div>
+      <div class="comic-info">
+        <div class="comic-title">Super Action Mecha Pets #1</div>
+        <div class="comic-badge">Read Now</div>
+      </div>
+    </div>
+
+    <div class="comic-card" onclick="location.href='samp-002.html'">
+      <div class="comic-cover">
+        <img src="images/samp-002/samp-002-000.jpg" alt="Super Action Mecha Pets #2">
+      </div>
+      <div class="comic-info">
+        <div class="comic-title">Super Action Mecha Pets #2</div>
+        <div class="comic-badge">Read Now</div>
+      </div>
+    </div>
+
+    <div class="comic-card" onclick="location.href='jrj-special.html'">
+      <div class="comic-cover">
+        <img src="images/jrj-special/jrj-special-000.jpg" alt="Jack Rabbit Jill Super Summer Fun Special">
+      </div>
+      <div class="comic-info">
+        <div class="comic-title">Jack Rabbit Jill Super Summer Fun Special</div>
+        <div class="comic-badge">Read Now</div>
+      </div>
+    </div>
+
+    <div class="comic-card" onclick="location.href='albert-einstein-001.html'">
+      <div class="comic-cover">
+        <img src="images/albert-einstein-001/albert-einstein-001-000.jpg" alt="Albert & Einstein #1">
+      </div>
+      <div class="comic-info">
+        <div class="comic-title">Albert &amp; Einstein #1</div>
+        <div class="comic-badge">Read Now</div>
+      </div>
+    </div>
+
+    <div class="comic-card" onclick="location.href='scse-003.html'">
+      <div class="comic-cover">
+        <img src="images/scse-003/scse-003-000.jpg" alt="Super Cosmos Space Explorer #3">
+      </div>
+      <div class="comic-info">
+        <div class="comic-title">Super Cosmos Space Explorer #3</div>
+        <div class="comic-badge">Read Now</div>
+      </div>
+    </div>
+
+    <div class="comic-card" onclick="location.href='rex-ryder-001.html'">
+      <div class="comic-cover">
+        <img src="images/rex-ryder-001/rex-ryder-001-000.jpg" alt="Rex Ryder: Turbo Racer #1">
+      </div>
+      <div class="comic-info">
+        <div class="comic-title">Rex Ryder: Turbo Racer #1</div>
+        <div class="comic-badge">Read Now</div>
+      </div>
+    </div>
+
+    <div class="comic-card" onclick="location.href='enigma-jane-009.html'">
+      <div class="comic-cover">
+        <img src="images/enigma-jane-009/enigma-jane-009-000.jpg" alt="Enigma Jane: Spellslinger #9">
+      </div>
+      <div class="comic-info">
+        <div class="comic-title">Enigma Jane: Spellslinger #9</div>
+        <div class="comic-badge">Read Now</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="about" id="about">
+  <h2>About 6World Comics</h2>
+  <p>6World Comics is an independent publishing imprint founded by Jesse Six. Creating original graphic novels and comics with not terribly horrible storytelling and okay art. All titles are self-published and creator-owned.</p>
+</div>
+
+<footer>
+  &copy; 2026 6World Comics &nbsp;·&nbsp; Jesse Six &nbsp;·&nbsp; All rights reserved
+</footer>
+
+</body>
+</html>
