@@ -35,6 +35,22 @@
     .about h2 { font-size: 1.5rem; font-weight: 300; margin-bottom: 1rem; color: #1a1a1a; letter-spacing: 1px; }
     .about p { color: #556677; line-height: 1.8; font-size: 0.95rem; max-width: 600px; }
     footer { padding: 1.5rem 2rem; text-align: center; font-size: 0.8rem; color: #aaa; border-top: 1px solid #e8e8e8; background: #fff; letter-spacing: 1px; }
+    @media (max-width: 768px) {
+  nav { padding: 0.8rem 1rem; flex-wrap: wrap; }
+  .nav-logo { font-size: 0.95rem; white-space: nowrap; }
+  .nav-logo img { height: 28px; }
+  .nav-links { gap: 1rem; }
+  .nav-links a { font-size: 0.7rem; letter-spacing: 1px; }
+
+  .hero { height: auto; display: block; }
+  .hero-img { position: static; height: 220px; object-fit: cover; object-position: center 30%; }
+  .hero-overlay { position: static; background: none; padding: 1.2rem 1.2rem 0 1.2rem; }
+  .hero-title { font-size: 1.9rem; }
+  .hero-label { font-size: 0.65rem; }
+  .hero-cta { width: 100%; text-align: center; }
+
+  .comics-grid { justify-content: center; }
+}
   </style>
 </head>
 <body>
